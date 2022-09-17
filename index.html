@@ -1,0 +1,292 @@
+ <!DOCTYPE html>
+<!-- Template by html.am -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>ResearchBuzz Search Gizmos: JOOC Box RSS/OPML Maker</title>
+		<style type="text/css">
+			html, #page { padding:0; margin:0;}
+			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+			h1, h2, h3, h4, h5, h6 {color:darkblue;}
+			#page { background:#fff;}
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+						
+			/* Logo */
+			#logo { padding:0; width:auto; float:left;}
+			#logo h1 a, h1 a:hover { color:darkblue; text-decoration:none;}
+			#logo h1 span { color:#24592c;}
+
+			/* Header */
+			#header { background:#fff; }
+			#header-inner { margin:0 auto; padding:0; width:970px;}
+			
+			/* Feature */
+			.feature { background:blue;padding:18px;}
+			.feature-inner { margin:auto;width:970px; }
+			.feature-inner h1 {color:#E9E9FC;font-size:32px;}
+			
+			/* Menu */
+			#top-nav { margin:0 auto; padding:0px 0 0; height:37px; float:right;}
+			#top-nav ul { list-style:none; padding:0; height:37px; float:left;}
+			#top-nav ul li { margin:0; padding:0 0 0 8px; float:left;}
+			#top-nav ul li a { display:block; margin:0; padding:8px 20px; color:blue; text-decoration:none;}
+			#top-nav ul li.active a, #top-nav ul li a:hover { color:#d3d3f9;}
+			
+			/* Content */
+			#content-inner { margin:0 auto; padding:10px 0; width:970px;background:#fff;}
+			#content #contentbar { margin:0; padding:0; float:right; width:760px;}
+			#content #contentbar .article {  font-size: 1.25em; color: black; margin:0 0 24px; padding:0 20px 0 15px; }
+			#content #sidebar { background-color:#ECFFDC; padding:0; float:left; width:200px;}
+			#content #sidebar .widget { margin:0 0 12px; padding:8px 8px 8px 13px;line-height:1.4em;}
+			#content #sidebar .widget h3 a { text-decoration:none;}
+			#content #sidebar .widget ul { margin:0; padding:0; list-style:none; color:#959595;}
+			#content #sidebar .widget ul li { margin:0;}
+			#content #sidebar .widget ul li { padding:4px 0; width:185px;}
+			#content #sidebar .widget ul li a {font-size: 1.25em; color:black; text-decoration:none; margin-left:-16px; padding:4px 8px 4px 16px;}
+			#content #sidebar .widget ul li a:hover { color:#d3d3f9; font-weight:bold; text-decoration:none;}
+			
+			/* Footerblurb */
+			#footerblurb { background:#d3d3f9;color:blue;}
+			#footerblurb-inner { margin:0 auto; width:922px; padding:24px;}
+			#footerblurb .column { margin:0; text-align:justify; float:left;width:250px;padding:0 24px;}
+			
+			/* Footer */
+			#footer { background:#fff;}
+			#footer-inner { margin:auto; text-align:center; padding:12px; width:922px;}
+			#footer a {color:blue;text-decoration:none;}
+			
+			/* Clear both sides to assist with div alignment  */
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+		</style>
+		
+
+	</head>
+	<body>
+		<div id="page">
+			<header id="header">
+				<div id="header-inner">	
+					<div id="logo">
+						<h1><a href="#">ResearchBuzz<span>Search Gizmos</span></a></h1>
+					</div>
+					<div id="top-nav">
+						<ul>
+						<li><a href="https://github.com/ResearchBuzz">ResearchBuzz GitHub Home</a></li>
+						<li><a href="https://www.researchbuzz.me">ResearchBuzz Main Site</a></li>
+						<li><a href="https://www.rbfirehose.com">ResearchBuzz Firehose</a></li>
+						</ul>
+					</div>
+					<div class="clr"></div>
+				</div>
+			</header>
+			<div class="feature">
+				<div class="feature-inner">
+				<h1>JOOC Box RSS/OPML Maker </h1>
+				</div>
+			</div>
+		
+	
+			<div id="content">
+				<div id="content-inner">
+				
+					<main id="contentbar">
+						<div class="article">
+	
+<h3>Did you ever want to monitor a news topic for only a few days? That's what JOOC Box is for.</h3>
+
+<i>"JOOC" is Internet slang for "Just Out Of Curiosity"!</i><br>
+
+<h4>Enter a query that you want to follow and how many days you want to follow it. JOOC Box will generate RSS feeds with that query for Bing, Bing News, Google News, Reddit, and WordPress. Additionally, it will give every RSS feed a title with the "expiration date" of your interest in that feed. It'll look like this:</h4>
+
+<h5>'Google News search for 2022 Midterms' expiring on 9/20/2022</h5>
+
+<h4>Those five generated RSS feeds are bundled into an OPML file which you can use to import the feeds to your favorite feed reader. Keeping track of and removing feeds is as simple as searching for the expiration date in your RSS feed reader. 
+
+<img src="JOOCBox1.png" alt="Screenshot of A list of RSS Feeds in Feedly">
+
+<h4>JOOC Box will create and your computer will automatically download a text file when you run it. That's the OPML file. It has a title that looks like this: </h4>
+
+<h5>JOOC Box_OPML_File_For_'pumpkin%2520spice'_expiring_9_20_2022.opml</h5>
+
+<h4>It's a plain text file and you can open it with a text editor if you like, though it'll look unformatted.</h4>
+
+<br>
+<label>Query to monitor</label>
+  <input type="text" class="searchq" value="2022 Midterms"><br><br>
+
+  <label>Number of days you want the feed active (max 90)</label>
+  <input type="number" class="daysactive" min="1" max="90" value="3" size="3"><br><br>
+
+
+
+<button onclick="JOOC()">Whip Up Some Feeds</button><br><br>
+
+<i><div id="alldone">
+
+</div></i>
+
+
+					</main>
+					
+						<nav id="sidebar">
+						<div class="widget">
+							<h3>Gizmo Categories</h3>
+
+							<ul>
+							<li><a href="https://researchbuzz.github.io/Google.html">Google Search Tools</a></li>
+							<li><a href="https://researchbuzz.github.io/Twitter.html">Twitter Search Tools</a></li>
+							<li><a href="https://researchbuzz.github.io/News.html">News Search Tools</a></li>
+							<li><a href="https://researchbuzz.github.io/Blog.html">Blog Search Tools</a></li>
+							<li><a href="https://researchbuzz.github.io/Name.html">Name Search Tools</a></li>
+<li><a href="https://researchbuzz.github.io/OSINT.html">Search with OSINT Data</a></li>
+<li><a href="https://researchbuzz.github.io/notGithub.html">Random Gizmos Not on GitHub</a></li>
+
+
+							</ul>
+
+<br><br><a href="https://researchbuzz.github.io/">RB Search Gizmos Home</a><br><br>
+						</div>
+					</nav>
+					
+					<div class="clr"></div>
+				</div>
+			</div>
+		
+			<div id="footerblurb">
+				<div id="footerblurb-inner">
+				
+					<div class="column">
+						<h2><span>What Is This?</span></h2>
+						<p>The RB Gizmos are a collection of search tools made with JavaScript and HTML.</p>
+					</div>	
+					<div class="column">
+						<h2><span>Why Is This?</span></h2>
+						<p>Because I've been writing about searching and search engines since 1996 and I'm obsessed with them.</p>
+					</div>
+					<div class="column">
+						<h2> </h2>
+						<p><script> </script></p>
+					</div>	
+					
+					<div class="clr"></div>
+				</div>
+			</div>
+			<footer id="footer">
+				<div id="footer-inner">
+					
+					<div class="clr"></div>
+				</div>
+			</footer>
+
+
+
+		</div>
+
+
+
+
+   <script>
+function JOOC(){
+
+// Setting variables and whatnot
+
+var searchq = document.querySelector(".searchq").value  
+var searchqdisplay = searchq
+console.log(searchq)
+var searchq = encodeURI(searchq)
+var daysactive = document.querySelector(".daysactive").value  
+daysactive = Number(daysactive)
+
+searchq = encodeURI(searchq)
+let rssurls = []
+let rssfull = []
+let feedtitles = []
+
+// Setting up the days
+
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+
+var thisday = new Date()
+
+console.log("Today",thisday)
+
+var daysout = addDays(thisday,daysactive) 
+var daysoutday = daysout.getDate();
+var daysoutmonth = daysout.getMonth();
+daysoutmonth = daysoutmonth + 1
+console.log(daysoutmonth)
+var daysoutyear = daysout.getFullYear();
+
+var datestring =daysoutmonth+"/"+daysoutday+"/"+daysoutyear
+
+console.log(datestring)
+
+
+// RSS Feed Templates
+
+var bing = "https://www.bing.com/search?format=RSS&amp;q="+searchq
+var bingname = "Bing Search for '"+searchqdisplay+"' expiring on "+datestring
+var bingOPML = "<outline text=\"Bing\" title=\"'Bing search for "+searchqdisplay+"' expiring on "+datestring+"\" type=\"rss\" xmlUrl=\""+bing+"\"/>"
+console.log(bingOPML)
+
+var bingnews = "https://www.bing.com/news/search?format=RSS&amp;q="+searchq
+var bingnewsname = "Bing News Search for '"+searchqdisplay+"' expiring on "+datestring
+var bingnewsOPML = "<outline text=\"Bing News\" title=\"'Bing News search for "+searchqdisplay+"' expiring on "+datestring+"\" type=\"rss\" xmlUrl=\""+bingnews+"\"/>"
+console.log(bingnewsOPML)
+
+var googlenews = "https://news.google.com/rss/search?q="+searchq
+var googlenewsname = "Google News Search for '"+searchqdisplay+"' expiring on "+datestring
+var googlenewsOPML = "<outline text=\"Google News\" title=\"'Google News search for "+searchqdisplay+"' expiring on "+datestring+"\" type=\"rss\" xmlUrl=\""+googlenews+"\"/>"
+
+var reddit = "https://www.reddit.com/search.rss?sort=new%24="+searchq
+var redditname = "Reddit Search for '"+searchqdisplay+"' expiring on "+datestring
+var redditOPML = "<outline text=\"Reddit\" title=\"Reddit search for "+searchqdisplay+"' expiring on "+datestring+"\" type=\"rss\" xmlUrl=\""+reddit+"\"/>"
+
+var wordpress = "https://en.search.wordpress.com/?f=feed&amp;q="+searchq
+var wordpressname = "WordPress Search for '"+searchqdisplay+"' expiring on "+datestring
+var wordpressOPML = "<outline text=\"WordPress\" title=\"'WordPress search for "+searchqdisplay+"' expiring on "+datestring+"\" type=\"rss\" xmlUrl=\""+wordpress+"\"/>"
+
+
+
+rssurls.push(bing,bingnews,googlenews,reddit,wordpress)
+feedtitles.push(bingname, bingnewsname, googlenewsname,redditname,wordpressname) 
+
+console.log(feedtitles)
+console.log(rssurls)
+
+
+// Let's make an OPML file 
+
+
+var OPMLhead = "<opml version=\"1.0\"><head><title>OPML file for '"+searchqdisplay+"', expiring "+datestring+"</title></head><body>"
+
+var OPMLtail = "</body></opml>"
+
+var OPMLfull = OPMLhead+bingOPML+bingnewsOPML+googlenewsOPML+redditOPML+wordpressOPML+OPMLtail
+
+var filename = "JOOC Box_OPML_File_For_'"+searchq+"'_expiring_"+datestring+".opml"
+
+console.log(OPMLfull)
+
+var a = document.createElement("a");
+a.href = window.URL.createObjectURL(new Blob([OPMLfull], {type: "text/plain"}));
+a.download = filename;
+a.click();
+
+var Bdiv = document.getElementById("alldone")
+
+Bdiv.innerHTML = "All done! Check your downloaded files directory for a text file ending in .opml."
+
+
+}
+
+
+</script>
+  </body>
+</html>
+</body>
+</html>
